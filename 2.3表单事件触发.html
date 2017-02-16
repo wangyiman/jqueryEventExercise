@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript"src="jquery-3.1.0.min.js">
+   </script>
+   <script type="text/javascript">
+	 	$(document).ready(function(){
+			var handler = function(evt){
+				//evt.which左中右分别是1，2，3
+			console.log(evt.which,evt.type);
+			}
+			
+			$("#area").on("focusin",handler);
+			$("#area").on("change",handler);
+			$("#area").on("select",handler);
+			$("#area").on("focusout",handler);
+			
+			
+		});
+   </script>
+ </head>
+ <body>
+  <input type="text" name=""id="area">
+ </body>
+</html>

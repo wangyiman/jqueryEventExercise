@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript"src="jquery-3.1.0.min.js">
+  </script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('#btn').click(function(evt){
+			//evt.stopPropagation();
+			console.log("我是按钮");
+			console.log(evt.type)//click
+			console.log(evt.target);//input
+		});
+		$("#click").click(function(evt){
+			console.log("我是body");
+			console.log(evt.target);//input 
+		});
+	});
+  </script>
+ </head>
+ <body>
+  <div id="click" class="">
+	<input type="button" value="click me" onclick=""id="btn">
+  </div>
+ </body>
+</html>

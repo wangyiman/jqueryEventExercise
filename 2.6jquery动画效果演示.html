@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript"src="jquery-3.1.0.min.js">
+   
+   </script>
+   <script type="text/javascript">
+	$(document).ready(function(){
+	//$("#animateBox").hide();//display:none
+	//$("#animateBox").show();
+	//$("#animateBox").toggle(1000,function(){alert("动画完成");});
+	$("#animateBox").animate({top:100,left:300});
+	$("#animateBox").animate({top:100,left:0});
+	$("#animateBox").animate({top:0,left:300});
+	});
+   </script>
+ </head>
+ <body>
+  <div id="animateBox" class=""style="background-color:red;width:100px;height:100px;position:relative;">
+		
+	</div>
+	
+ </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript"src="jquery-3.1.0.min.js">
+  </script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$("#shengfen").change(function(){
+			var num = $("#shengfen").val();
+			$("#chengshi").html('');
+			switch(num){
+			case "1":
+			$("#chengshi").append($("<option>长沙</option>"));
+            $("#chengshi").append($("<option>株洲</option>"));
+			$("#chengshi").append($("<option>湘潭</option>"));
+				break;
+			case "2":
+			$("#chengshi").append($("<option>漯河</option>"));
+            $("#chengshi").append($("<option>洛阳</option>"));
+			$("#chengshi").append($("<option>郑州</option>"));
+			    break;
+			}
+		});
+		$("#shengfen").change();
+	});
+  </script>
+ </head>
+ <body>
+  <select name="shengfen"id="shengfen">
+	<option value="1" selected>湖南</option>
+	<option value="2">河南</option>
+  </select>
+  <select name=""id="chengshi">
+  </select>
+ </body>
+</html>

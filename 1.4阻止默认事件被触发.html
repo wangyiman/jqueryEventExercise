@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript"src="jquery-3.1.0.min.js">
+  </script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$("a").click(function(evt){
+			if(confirm("跳转页面么"))
+			{}
+			else evt.preventDefault();
+
+		});
+	});
+  </script>
+ </head>
+ <body>
+  <a href="http://www.baidu.com">跳转到百度</a>
+ </body>
+</html>

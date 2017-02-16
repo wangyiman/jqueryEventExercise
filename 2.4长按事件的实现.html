@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript"src="jquery-3.1.0.min.js">
+   </script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		//自定义事件
+		var runId;
+		$("#area").on("mousedown",function(){
+		runId= setTimeout(function(){
+			$("#area").trigger("holding");
+		},1000);
+		});
+		$("#area").on("mouseup",function(){
+		 clearTimeout(runId);
+		});
+		$("#area").on("holding",function(){console.log("长按成功");});
+	});
+  </script>
+ </head>
+ <body>
+  <div id="area" class="">
+	<input type="button" value="click me" onclick="">
+  </div>
+ </body>
+</html>

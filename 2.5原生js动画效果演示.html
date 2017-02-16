@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript"src="jquery-3.1.0.min.js">
+   
+   </script>
+   
+ </head>
+ <body>
+	<div id="animateBox" class=""style="background-color:red;width:100px;height:100px;position:relative;">
+		
+	</div>
+	<script type="text/javascript">
+	var box=document.getElementById("animateBox");
+	var x=0;
+	var runId = setInterval(function(){
+		box.style.top=x++ +"px";
+		if(x>1000){clearInterval(runId);}
+		
+
+	},16);
+   </script>
+ </body>
+</html>

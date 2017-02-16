@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript"src="jquery-3.1.0.min.js">
+  </script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+		alert("haha")
+		});
+		//$("#btn1").click();
+		$("#btn1").trigger('click');
+	});
+  </script>
+ </head>
+ <body>
+	<input type="button" value="click me" onclick=""id="btn1">
+ </body>
+</html>

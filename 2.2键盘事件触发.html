@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript"src="jquery-3.1.0.min.js">
+   </script>
+   <script type="text/javascript">
+	 	$(document).ready(function(){
+			var handler = function(evt){
+				console.log(evt.which,evt.type);
+			}
+			$("#area").on("keydown",handler);//evt.which对应的ascii码
+			$("#area").on("keypress",handler);
+			$("#area").on("keyup",handler);
+		});
+   </script>
+ </head>
+ <body>
+  
+  <input type="text" name=""id="area">
+ </body>
+</html>
